@@ -33,7 +33,7 @@ namespace RemoveLayer
                     LayerTableRecord acLyrTblRec;
                     acLyrTblRec = acTrans.GetObject(acLyrTbl["MyLayer"],
                         OpenMode.ForWrite) as LayerTableRecord;
-
+                    
                     try
                     {
                         acLyrTblRec.Erase();
