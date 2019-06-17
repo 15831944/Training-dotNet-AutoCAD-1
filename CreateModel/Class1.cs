@@ -4,13 +4,13 @@ using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.Geometry;
 
 namespace CreateModel
-{
+{   
     public class Class1
     {
         [CommandMethod("CreateModelViewport")]
         public static void CreateModelViewport()
         {
-            // Get the current database
+            // Get the current document
             Document acDoc = Application.DocumentManager.MdiActiveDocument;
             // Get the database
             Database acDb = acDoc.Database;
